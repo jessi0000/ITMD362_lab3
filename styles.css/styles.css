@@ -1,0 +1,74 @@
+/* Import Google Font Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* General Styling */
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Font stack with Roboto, Arial, and sans-serif */
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-styling {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+input[type="email"], input[type="checkbox"], button {
+    padding: 15px;
+    border-radius: 8px;
+    border: none; /* No visible borders */
+    background-color: #e0e0e0; /* Light gray for input backgrounds */
+}
+
+button {
+    color: #ffffff;
+    background-color: #333333; /* Dark gray for contrast */
+    cursor: pointer;
+    font-size: 1rem; /* Ensuring readable font size on all devices */
+}
+
+button:hover {
+    background-color: #555555;
+}
+
+input[type="email"]:focus, button:focus {
+    outline: none;
+    background-color: #cccccc; /* Slightly darker for focus */
+}
+
+label {
+    font-weight: 700; /* Bold labels for better readability */
+    display: block; /* Makes label take full width for better touch */
+    margin-bottom: 5px; /* Space before inputs */
+}
+
+/* Media Queries for Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .form-styling {
+        gap: 15px;
+    }
+
+    input[type="email"], input[type="checkbox"], button {
+        padding: 10px; /* Slightly less padding on smaller screens */
+    }
+
+    button {
+        font-size: 0.9rem; /* Slightly smaller font size for smaller screens */
+    }
+}
